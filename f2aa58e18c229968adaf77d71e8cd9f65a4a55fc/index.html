@@ -1,500 +1,210 @@
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" prefix="og: http://ogp.me/ns#" class="no-js">
-<head>
-    <title>Get Ordained Online</title>
-    <meta name="description" content="Instant Online Ordination! You are about to become an ordained minister with the Universal Life Church Ministry. Get ordained today.">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Wordle - The New York Times</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://www.nytimes.com/games-assets/v2/metadata/nyt-apple-touch-icon.png?v=v2202021345"
+    />
+    <link
+      rel="mask-icon"
+      color="#000000"
+      href="https://www.nytimes.com/games-assets/v2/metadata/nyt-safari-pinned-tab.svg?v=v2202021345"
+    />
+    <meta name="apple-mobile-web-app-title" content="NYT Puzzles - Wordle" />
+    <meta name="application-name" content="NYT Puzzles - Wordle" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="sourceApp" content="games-crosswords" />
+    <meta
+      property="description"
+      content="Guess the hidden word in 6 tries. A new puzzle is available each day."
+    />
+    <meta property="og:title" content="Wordle - A daily word game" />
+    <meta property="og:url" content="https://www.nytimes.com/games/wordle" />
+    <meta
+      property="og:description"
+      content="Guess the hidden word in 6 tries. A new puzzle is available each day."
+    />
+    <meta property="og:image" content="./images/NYT-Wordle-Meta.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="nytimes.com" />
+    <link rel="canonical" href="https://www.nytimes.com/games/wordle/index.html" />
+    <link rel="manifest" href="manifest.json" />
+    <link href="./images/NYT-Wordle-Icon-32.png" rel="icon shortcut" sizes="3232" />
+    <link href="./images/NYT-Wordle-Icon-192.png" rel="apple-touch-icon" />
 
-    <link href="https://getordained.org/free-ordination" rel="canonical">
-    <link rel="icon" href="/assets/getordained/favicon.ico" type="image/x-icon">
+    <style>
+      /* NYT Fonts */
+      @font-face {
+        font-family: 'nyt-karnakcondensed';
+        src: url('./fonts/karnakcondensed-normal-700.woff2') format('woff2'),
+          url('./fonts/karnakcondensed-normal-700.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+      }
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Get Ordained Online">
-    <meta property="og:description" content="Instant Online Ordination! You are about to become an ordained minister with the Universal Life Church Ministry. Get ordained today.">
-    <meta property="og:url" content="https://getordained.org/free-ordination">
-    <meta property="og:site_name" content="Get Ordained Online">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="https://getordained.org/free-ordination">
-    <meta name="twitter:title" content="Get Ordained Online">
-    <meta name="twitter:description" content="Instant Online Ordination! You are about to become an ordained minister with the Universal Life Church Ministry. Get ordained today.">
-    <meta name="csrf-token" content="Chw50WM7HWB01TGQdhnC9N1gh35gtzE42vy5rXm3">
-            <meta name="robots" content="max-image-preview:large">
-                            <meta property="og:image" content="https://getordained.org/assets/getordained/social/wedding-training.jpg">
-        
-                    <meta name="twitter:image" content="https://getordained.org/assets/getordained/social/wedding-training.jpg">
-            
-    
-    
-    <script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">(function(H){H.className=H.className.replace(/\bno-js\b/,'js');})(document.documentElement)</script>
+      @font-face {
+        font-family: 'nyt-franklin';
+        src: url('./fonts/franklin-normal-500.woff2') format('woff2'),
+          url('./fonts/franklin-normal-500.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+      }
 
-    <link rel="stylesheet" type="text/css" nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn" href="/assets/getordained/css/getordained-e6996c.css">
+      @font-face {
+        font-family: 'nyt-franklin-700';
+        src: url('./fonts/franklin-normal-700.woff2') format('woff2'),
+          url('./fonts/franklin-normal-700.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+      }
 
-    <script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn" type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/getordained.org\/","name":"Get Ordained Online","potentialAction":{"@type":"SearchAction","target":"https:\/\/getordained.org\/?s={search_term}","query-input":"required name=search_term"}}</script>
+      /* Global Styles & Colors */
+      :root {
+        --green: #6aaa64;
+        --darkendGreen: #538d4e;
+        --yellow: #c9b458;
+        --darkendYellow: #b59f3b;
+        --lightGray: #d8d8d8;
+        --gray: #86888a;
+        --darkGray: #939598;
+        --white: #fff;
+        --black: #212121;
+        /* Colorblind colors */
+        --orange: #f5793a;
+        --blue: #85c0f9;
+        font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 16px;
+        --header-height: 50px;
+        --keyboard-height: 200px;
+        --game-max-width: 500px;
 
-    
-</head>
-<body class="">
+        /* icons */
+        --spelling-bee: url('./images/nav-icons/SpellingBee-Icon-Normalized.svg');
+        --daily: url('./images/nav-icons/Crossword-Icon-Normalized.svg');
+        --mini: url('./images/nav-icons/Mini-Icon-Normalized.svg');
+        --tiles: url('./images/nav-icons/Tiles-Icon-Normalized.svg');
+        --sudoku: url('./images/nav-icons/Sudoku-Icon-Normalized.svg');
+        --vertex: url('./images/nav-icons/Vertex-Icon-Normalized.svg');
+        --letter-boxed: url('./images/nav-icons/LetterBoxed-Icon-Normalized.svg');
+      }
 
-<header class="sticky-header">
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="https://getordained.org">
-                <img src="/assets/getordained/images/logo-07458b.png" alt="Get Ordained Logo" width="307"
-                     height="72">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                                            <li class="nav-item"><a class="nav-link" href="https://getordained.org/login"
-                                                id="nav-login-link">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://getordained.org/free-ordination"
-                                                id="nav-register-link">Apply for Ordination</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://getordained.org/ministry-supplies/cart"
-                                                id="nav-cart-link">Cart</a>
-                        </li>
-                                    </ul>
-            </div>
-        </nav>
-    </div>
+      /* Light theme colors */
+      :root {
+        --color-tone-1: #000000;
+        --color-tone-2: #787c7e;
+        --color-tone-3: #878a8c;
+        --color-tone-4: #d3d6da;
+        --color-tone-5: #edeff1;
+        --color-tone-6: #f6f7f8;
+        --color-tone-7: #ffffff;
+        --color-nav-hover: #f4f4f4;
+        --opacity-50: rgba(255, 255, 255, 0.5);
+      }
 
-</header>
+      /* Dark Theme Colors */
+      .nightmode {
+        --color-tone-1: #ffffff;
+        --color-tone-2: #818384;
+        --color-tone-3: #565758;
+        --color-tone-4: #3a3a3c;
+        --color-tone-5: #272729;
+        --color-tone-6: #1a1a1b;
+        --color-tone-7: #121213;
+        --color-nav-hover: #2f2f31;
+        --opacity-50: rgba(0, 0, 0, 0.5);
 
- 
- 
-<main>
-    <div class="container page-container">
-        
-<div class="postentry">
-    <div class="row text-center">
-        <div class="col-md-12">
-            <h1>Instant Online Ordination</h1>
-            <p> Welcome! You are about to become an ordained minister with the Universal Life Church Ministry.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-7 d-md-none">
-            <p>
-                <img class="img-fluid" src="/assets/getordained/images/legally-perform-weddings-aee772.jpg" alt="Get Legally Ordained to Perform Weddings" width="750" height="350" loading="lazy"/>
-            </p>
-        </div>
-        <div class="col-md-5 col-lg-4 order-md-1">
+        /* dark mode icons */
+        --spelling-bee: url('./images/nav-icons/SpellingBee-Icon-Normalized-Color.svg');
+        --daily: url('./images/nav-icons/Crossword-Icon-Normalized-Color.svg');
+        --mini: url('./images/nav-icons/Mini-Icon-Normalized-Color.svg');
+        --tiles: url('./images/nav-icons/Tiles-Icon-Normalized-Color.svg');
+        --sudoku: url('./images/nav-icons/Sudoku-Icon-Normalized-Color.svg');
+        --vertex: url('./images/nav-icons/Vertex-Icon-Normalized-Color.svg');
+        --letter-boxed: url('./images/nav-icons/LetterBoxed-Icon-Normalized-Color.svg');
+      }
+      /* Constant colors and colors derived from theme */
+      :root,
+      .nightmode {
+        --color-background: var(--color-tone-7);
+      }
+      :root {
+        --color-present: var(--yellow);
+        --color-correct: var(--green);
+        --color-absent: var(--color-tone-2);
+        --tile-text-color: var(--color-tone-7);
+        --key-text-color: var(--color-tone-1);
+        --key-evaluated-text-color: var(--color-tone-7);
+        --key-bg: var(--color-tone-4);
+        --key-bg-present: var(--color-present);
+        --key-bg-correct: var(--color-correct);
+        --key-bg-absent: var(--color-absent);
+        --modal-content-bg: var(--color-tone-7);
+      }
+      .nightmode {
+        --color-present: var(--darkendYellow);
+        --color-correct: var(--darkendGreen);
+        --color-absent: var(--color-tone-4);
+        --tile-text-color: var(--color-tone-1);
+        --key-text-color: var(--color-tone-1);
+        --key-evaluated-text-color: var(--color-tone-1);
+        --key-bg: var(--color-tone-2);
+        --key-bg-present: var(--color-present);
+        --key-bg-correct: var(--color-correct);
+        --key-bg-absent: var(--color-absent);
+        --modal-content-bg: var(--color-tone-7);
+      }
+      .colorblind {
+        --color-correct: var(--orange);
+        --color-present: var(--blue);
+        --tile-text-color: var(--white);
+        --key-bg-present: var(--color-present);
+        --key-bg-correct: var(--color-correct);
+        --key-bg-absent: var(--color-absent);
+      }
 
-            
-            <form method="POST" action="https://getordained.org/free-ordination" accept-charset="UTF-8" id="ordination-form" class="mb-20"><input name="_token" type="hidden" value="Chw50WM7HWB01TGQdhnC9N1gh35gtzE42vy5rXm3">
-
-<input name="form" type="hidden" value="ordination">
-<fieldset>
-
-    <div class="form-group ">
-        <label for="name" class="control-label">Full Name:</label>
-        <input x-autocompletetype="name-full" class="form-control" name="name" type="text" id="name">
-        <p class="help-block">Do not include titles and please capitalize correctly e.g. use "Peter
-            Patterson" not "Dr. Peter Patterson"</p>
-    </div>
-
-    <div class="form-group ">
-        <label for="email" class="control-label">E-mail:</label>
-        <input x-autocompletetype="email" class="form-control" name="email" type="email" id="email">
-    </div>
-
-    <div class="form-group ">
-        <label for="country" class="control-label">Country:</label>
-        <select x-autocompletetype="country" class="form-select" id="country" name="country"><option value="">-- Select a Country --</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, the Democratic Republic of the</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D&#039;Ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and Mcdonald Islands</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran, Islamic Republic of</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KP">Korea, Democratic People&#039;s Republic of</option><option value="KR">Korea, Republic of</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao People&#039;s Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libyan Arab Jamahiriya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia, the Former Yugoslav Republic of</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States of</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territory, Occupied</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="CS">Serbia and Montenegro</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="TW">Taiwan, Province of China</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania, United Republic of</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB" selected="selected">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, U.S.</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="RS">Serbia</option><option value="ME">Montenegro</option><option value="SS">South Sudan</option><option value="AX">Aland</option><option value="GG">Guernsey</option><option value="IM">Isle of Man</option><option value="JE">Jersey</option><option value="BQ">Bonaire, Sint Eustatius and Saba</option><option value="CW">Curacao</option><option value="SX">Sint Maarten</option></select>
-    </div>
-
-    <div id="region-container" class="form-group ">
-        <label for="region" class="control-label">State / Province / Region:</label>
-        <select x-autocompletetype="region" class="form-select" data-toggle="tooltip" title="Please select the state / province / region in which you reside. Your ordination will be accepted across most of the U.S. and in several other countries, regardless of your selection here." data-bs-placement="top" id="region" name="region"><option selected="selected" value="">-- Please Choose a Region --</option><option value="ENG">England</option><option value="NIR">Northern Ireland</option><option value="SCT">Scotland</option><option value="WLS">Wales</option></select>
-
-    </div>
-
-        <div class="form-group ">
-        <label for="password" class="control-label">Choose Password:</label>
-        <input class="form-control" name="password" type="password" value="" id="password">
-    </div>
-
-    <div class="form-group ">
-        <label for="password-confirm" class="control-label">Confirm Password:</label>
-        <input class="form-control" name="password-confirm" type="password" value="" id="password-confirm">
-    </div>
-    
-            <div class="form-group mb-0 ">
-            <div class="checkbox">
-                <label>
-                    <input id="is-valid-age" name="is-valid-age" type="checkbox" value="1">
-                    I certify that I am 18 years of age or older
-                </label>
-            </div>
-        </div>
-    
-    <div class="form-group ">
-        <div class="checkbox">
-            <label>
-                <input id="subscribe" name="subscribe" type="checkbox" value="1">
-                Join our monthly newsletter
-            </label>
-        </div>
-    </div>
-
-    <span class="d-grid"><button class="btn btn-lg btn-success" id="submit-button" type="submit">Submit Ordination Request</button></span>
-
-</fieldset>
-</form>
-
-
-        </div>
-        <div class="col-md-7 col-lg-8 order-md-0">
-            <p class="d-none d-md-block">
-                <img class="img-fluid" src="/assets/getordained/images/legally-perform-weddings-aee772.jpg" alt="Get Legally Ordained to Perform Weddings" width="750" height="350" loading="lazy" />
-            </p>
-            <p>One of the ULC's fundamental beliefs is that everyone should be afforded equal freedom to exercise their
-                religious beliefs – whatever those beliefs may be. This first amendment right, granted by the U.S.
-                Constitution, includes the freedom to become ordained as a minister without jumping through numerous hoops
-                and taking expensive courses.</p>
-
-            <p>The ULC provides ordinations entirely free of charge to anyone that seeks to join. Once ordained, you
-                have the right to perform weddings, baptisms, and other ceremonies. Officiating a ceremony is a
-                tremendous honor, and great responsibility. To assist you, we offer an array of tips, tools, and
-                materials.</p>
-
-            <p>By becoming a ULC minister, you'll also be joining a vast and spiritually-diverse community of people.
-                Whether you're still defining your religious philosophy, or have a highly-developed understanding of
-                your spirituality – the ULC community is an inclusive place which encourages the expression of beliefs
-                and the sharing of ideas.</p>
-
-            <ul>
-                <li>To become ordained, please fill out the form on the right side of this page. We will record your
-                    information and store it in our minister database.
-                </li>
-                <li>We care about your privacy; your information will not be shared with any third parties. Unless you
-                    subscribe to our monthly newsletter, we will not e-mail you unless we need to communicate important
-                    information relevant to your ordination.
-                </li>
-                <li>For legal reasons, we cannot accept applications from individuals under the age of 18. To submit
-                    this form, you must certify that you are 18 years of age or older.
-                </li>
-                <li>
-                    Only valid legal names and addresses will be accepted. If you submit at ordination request using a
-                    false name, a nickname, the name of another person, or the name of an animal your application will
-                    be considered invalid and your ordination will not be recognized.
-                </li>
-                <li>
-                    We reserve all rights to revoke any ordination or reject any application for ordination if it is
-                    discovered that it was made or obtained using incorrect or fraudulent information.
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="alert alert-warning">
-            <strong>NOTICE:</strong><br> Our confirmation email can get caught in your spam filter<strong>. If you do not get your confirmation email within 10 mins please check your junk / spam filter.</strong>
-        </div>
-        <h2>Testimonials</h2>
-        <div class="row">
-            <div class="col-md-4 position-relative">
-                <img class="img-fluid mx-auto d-block"
-     src="/assets/getordained/images/eric-young-e16e2a.jpg"
-     alt="Eric Young, Ordained minister on Feb, 10 2014"
-     loading="lazy"
-           width="400"       height="266"  />
-
-                <blockquote class="testimonials">
-                    When my cousin explained how simple the process was for getting ordained, I admit I was a little skeptical. As it turned out, becoming a minister opened a ton of doors for me. I’m so glad I joined!
-                    <cite>
-                        -- Eric Young
-                    </cite>
-                </blockquote>
-            </div>
-            <div class="col-md-4 position-relative">
-                <img class="img-fluid mx-auto d-block"
-     src="/assets/getordained/images/michael-hunter-95717f.jpg"
-     alt="Michael hunter, Ordained minister on Jun 7, 1996"
-     loading="lazy"
-           width="400"       height="266"  />
-
-                <blockquote class="testimonials">
-                    When I mentioned my interest in starting a ministry, one of my friends recommended getting ordained online. Thanks to the ULC’s helpful materials and products, my ministry was off the ground in no time!
-                    <cite>
-                        -- Michael Hunter
-                    </cite>
-                </blockquote>
-
-            </div>
-            <div class="col-md-4 position-relative">
-                <img class="img-fluid mx-auto d-block"
-     src="/assets/getordained/images/elizabeth-randolph-bf1ae2.jpg"
-     alt="Elizabeth Randolph, Ordained minister on Sep 12, 2001"
-     loading="lazy"
-           width="400"       height="267"  />
-
-                <blockquote class="testimonials">
-                    When my little brother asked me to officiate his wedding, I was ecstatic. Getting ordained proved even easier than I thought! The ceremony was beautiful and the ULC made it all possible.
-                    <cite>
-                        -- Elizabeth Randolph
-                    </cite>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-</div>
-    </div>
-</main>
-
-<footer>
-
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 text-center">
-                    <div class="footer-img-border">
-                        <p>
-                            <img src="/assets/getordained/images/footer-img-0caaa7.jpg" class="mx-auto d-block" alt="Get Ordained" loading="lazy" width="200" height="145">
-                        </p>
-                    </div>
-                    <p>
-                        <strong>Get Ordained / Universal Life Church</strong> <br> 2880 Zanker Road, Suite 203
-                        <br> San Jose, CA 95134
-                    </p>
-                    <p>
-                        Email: info@getordained.org
-                    </p>
-                    <hr class="d-md-none mt-20 mb-20 mx-auto" />
-                </div>
-                <div class="col-md-7 text-center">
-                    <div class="row row-section">
-                        <div class="col-md-6">
-                            <div class="footer-menu-container">
-                                <h4 class="add-margin-top">SITEMAP</h4>
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="/become-a-minister">Become a Minister</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="https://getordained.org/ministry-supplies">Ministry Supplies</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/state-marriage-laws">Wedding Laws</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/training">Training</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/find-a-minister">Find a Minister<sup>&trade;</sup></a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/about">About</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/blog">Blog</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="footer-menu-container">
-                                <h4 class="add-margin-top">SUPPORT</h4>
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="https://getordained.org/contact-the-ulc">Contact</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/search">Search</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/shipping-returns">Shipping & Returns</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="/terms-of-service">Terms of Service</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="https://getordained.org/privacy-policy">Privacy Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="mx-auto" style="width: 175px">
-                        <a href="/">
-                            <img src="/assets/getordained/images/footer-logo-dad31b.png" alt="Get Ordained" loading="lazy" width="200" height="59">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <p class="text-center"><br>
-                        <span class="period">Copyright &copy; 2022 Get Ordained<sup>&trade;</sup></span> All Rights Reserved.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</footer>
-
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">
-    window.Laravel = {"csrfToken":"Chw50WM7HWB01TGQdhnC9N1gh35gtzE42vy5rXm3","windowState":null,"chatAvailable":false,"hasChatHistory":false,"userId":null,"userName":null,"anonymousChatID":"anonymous62103890d19cc"}
-</script>
-
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn" src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn" src="/assets/getordained/js/getordained-07c29e.js"></script>
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">
-    var chatHost = window.location.hostname + ':6003';
-</script>
-
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn" src="/assets/shared/js/shared-2068e0.js"></script>
-
-
-
-
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">window.dataLayer.push({"country":"GB","nonce":"lGqY2DNcNUqNau7Lf993F3c7uFattCMn"});</script>
-
-
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQV4MHW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQV4MHW');</script>
-
-    <script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">
-        const ordinationConfirmation = {
-            confirmed: false,
-
-            init: function() {
-                $$('#ordination-form').submit(this.handleSubmitAttempt.bind(this));
-                $$('body').on('click', '.ordination-confirm #confirmEdit', this.handleEditClick.bind(this));
-                $$('body').on('click', '.ordination-confirm #confirmSubmit', this.handleConfirmClick.bind(this));
-            },
-            handleSubmitAttempt: function(e) {
-                let name = $('#name').val();
-                let email = $('#email').val();
-                let country = $('#country option:selected').text();
-                let region = $('#region option:selected').text();
-                let filledOut = name && email && $('#country').val() &&
-                    ($$('#region').is(':hidden') || $$('#region').val());
-
-                if (filledOut && !this.confirmed) {
-                    e.preventDefault();
-                    this.showConfirmModal(name, email, country, region);
-                }
-            },
-            showConfirmModal: function(name, email, country, region) {
-                Swal.fire({
-                    customClass: {
-                        popup: 'ordination-confirm',
-                        container: 'ordination-modal'
-                    },
-                    title: "You Are Almost There!",
-                    html: $('#ordination-confirm').html(),
-                    showConfirmButton : false,
-                    showCancelButton: false,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    autoHeight: false,
-                });
-
-                $('#confirm-name').text(name);
-                $('#confirm-email').text(email);
-                $('#confirm-country').text(country);
-                $('#confirm-region').text(region);
-
-                this.setRegionVisibility();
-                $$('html').addClass('disable-scrolling-for-small');
-            },
-            setRegionVisibility: function() {
-                if ($$('#region').is(':hidden')) {
-                    $('#confirm-region').hide().prev().hide();
-                } else {
-                    $('#confirm-region').show().prev().show();
-                }
-            },
-            handleConfirmClick: function() {
-                this.confirmed = true;
-                $$('html').removeClass('disable-scrolling-for-small');
-
-                $$('#ordination-form').data('submitted', false);
-                $$('#ordination-form').submit();
-            },
-            handleEditClick: function() {
-                this.confirmed = false;
-                $$('#ordination-form').data('submitted', false);
-                $$('html').removeClass('disable-scrolling-for-small');
-
-                Swal.close()
-            },
-        };
-
-        $(function() {
-            ordinationConfirmation.init();
-        });
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        background-color: var(--color-background);
+        margin: 0;
+        padding: 0;
+        /* Prevent scrollbar appearing on page transition */
+        overflow-y: hidden;
+      }
+      .nav-item {
+        background-color: var(--color-nav-hover);
+      }
+      p.banner-text {
+        font-family: 'nyt-franklin' !important;
+      }
+      #pz-gdpr {
+        font-family: 'nyt-franklin-700' !important;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      (function () {
+        // Defining the hash before the main bundle allows the bundle access window.hash
+        window.wordle = window.wordle || {};
+        window.wordle.hash = '4d41d2be';
+      })();
     </script>
-
-    <script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn" type="text/template" id="ordination-confirm">
-        <div class='wrapper'>
-            <img src="/assets/getordained/images/logo-07458b.png" width="111" height="26" alt="Get ordained online for free with the Universal Life Church" loading="lazy">
-            <form method="POST" action="https://getordained.org/free-ordination" accept-charset="UTF-8" id="confirmation-form"><input name="_token" type="hidden" value="Chw50WM7HWB01TGQdhnC9N1gh35gtzE42vy5rXm3">
-            <p>You are just moments away from becoming a legally ordained minister of the Universal Life Church! After being ordained, you will be able to order minister supplies, access a full library of training literature, and perform ceremonies like weddings, funerals, and baptisms.</p>
-            <p><strong>Before completing your application, please take a moment to review all of the information you have entered. You will not be able to edit this information once it has been submitted.</strong> Your ordination can only be completed using your full, legal name. We will be unable to recognize any ordination obtained via false or incomplete information.</p>
-            <dl class="row">
-                <div class="row">
-                    <dt class="col-auto col-md-4">Full Legal Name:</dt>
-                    <dd class="col-auto col-md-8" id="confirm-name"></dd>
-                </div>
-
-                <div class="row">
-                    <dt class="col-auto col-md-4">E-mail:</dt>
-                    <dd class="col-auto col-md-8" id="confirm-email"></dd>
-                </div>
-
-                <div class="row">
-                    <dt class="col-auto col-md-4">Country:</dt>
-                    <dd class="col-auto col-md-8" id="confirm-country"></dd>
-                </div>
-
-                <div class="row">
-                    <dt class="col-auto col-md-4">State / Province / Region:</dt>
-                    <dd class="col-auto col-md-8" id="confirm-region"></dd>
-                </div>
-            </dl>
-
-            <fieldset class="fieldset">
-                <div class="button-wrapper">
-                    <button id="confirmEdit" type="button">Edit My Information</button>
-                    <button id="confirmSubmit" type="button">Submit Final Application</button>
-                </div>
-                <hr>
-                <p>
-                    By submitting this application you acknowledge that you are over the age of 18, have read our <a href="https://getordained.org/privacy-policy" target="_blank">Privacy Disclaimer</a>, and agree to our <a href="https://getordained.org/terms-of-service" target="_blank">Terms &amp; Conditions</a>. Only those applications completed using your full, legal name will be accepted and honored. We reserve all rights to revoke any ordination or reject any application for ordination.
-                </p>
-            </fieldset>
-            </form>
-        </div>
-    </script>
-    <script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">
-        $(function () {
-            $('[data-bs-toggle="tooltip"]').tooltip();
-
-            setUpOrdinationForm('#ordination-form', {"AT":"Austria","BE":"Belgium","BG":"Bulgaria","HR":"Croatia","CY":"Cyprus","CZ":"Czechia","DK":"Denmark","EE":"Estonia","FI":"Finland","FR":"France","DE":"Germany","GR":"Greece","HU":"Hungary","IE":"Ireland","IT":"Italy","LV":"Latvia","LT":"Lithuania","LU":"Luxembourg","MT":"Malta","NL":"Netherlands","PL":"Poland","PT":"Portugal","RO":"Romania","SK":"Slovakia","SI":"Slovenia","ES":"Spain","SE":"Sweden","GB":"United Kingdom","CA":"Canada"});
-        });
-    </script>
-
-<script nonce="lGqY2DNcNUqNau7Lf993F3c7uFattCMn">
-    // General info for manipulating forms via JS
-            let formErrors = [];
-        let oldInput = [];
-</script>
-
-</body>
+    <script src="main.4d41d2be.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://www.nytimes.com/games-assets/gdpr/cookie-notice-v2.1.2.min.js"
+    ></script>
+    <game-app></game-app>
+  </body>
 </html>
