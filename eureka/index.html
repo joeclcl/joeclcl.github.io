@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    function playMusic(){
-    var music = new Audio('Eureka.wav');
-    music.play();
-    }
+<body>
 
-    <input type="button" value="EUREKA" onclick="playMusic()" />
-  </body>
+<audio id="myAudio">
+  <source src="Eureka.wav" type="audio/wav">
+</audio>
+
+<button onclick="playAudio()" type="button">Eureka</button>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+</body>
 </html>
