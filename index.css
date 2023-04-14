@@ -13,13 +13,12 @@
   width: 703px;
   height: 176px;
   text-align: center;
-  padding-top: 120px;
+  padding-top: var(--dl-space-space-oneandhalfunits);
 }
 .index-image {
-  width: 339px;
+  width: 446px;
   height: 427px;
   object-fit: cover;
-  padding-top: var(--dl-space-space-fiveunits);
 }
 .index-container1 {
   flex: 0 0 auto;
@@ -50,7 +49,7 @@
   }
   .index-image {
     height: 405px;
-    padding-top: var(--dl-space-space-fiveunits);
+    padding-top: 0px;
   }
 }
 @media(max-width: 767px) {
@@ -61,7 +60,7 @@
   }
   .index-image {
     height: 418px;
-    padding-top: var(--dl-space-space-sixunits);
+    padding-top: 1px;
   }
 }
 @media(max-width: 479px) {
